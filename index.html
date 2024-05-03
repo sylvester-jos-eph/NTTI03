@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nttiregistration.com</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Courses</a>
+
+        </nav>
+    </header>
+    <div class="form-box">
+        <form class="Login-form">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" required>
+                <label>Email</label>
+                <ion-icon name="mail-unread-outline"></ion-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label for=>Password</label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <div class="checkbox">
+                <span>
+                    <input type="checkbox" id="login-checkbox">
+                    <label for="login-checkbox">Remember Me</label>
+                </span>
+                <h5>Forget password ?</h5>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <h5 class="Register-btn">Don't have an account ? <a href="">Register</a></h5>
+        </form>
+        <form class="Register-form">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" required>
+                <label>User name</label>
+                <ion-icon name="person-add-outline"></ion-icon>
+            </div>
+            <div class="input-box">
+                <input type="text" required>
+                <label for=>Email</label>
+                <ion-icon name="mail-unread-outline"></ion-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" required>
+                <label for=>Password</label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <div class="checkbox">
+                <span>
+                    <input type="checkbox" id="register-checkbox">
+                    <label for="register-checkbox">I agree to the rules & regulations</label>
+                </span>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <h5 class="Register-btn">Register before ? Login</h5>
+        </form>
+    </div>
+
+    
+</body>
+</html>
