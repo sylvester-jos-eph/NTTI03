@@ -1,17 +1,26 @@
-let register_btn = document.querySelector
-(".Register-btn");
-let login_btn = document.querySelector
-(".Login-btn");
-let form = document.querySelector
-(".Form-box");
 
+const loginForm =document.getElementById('loginForm');
 
-register_btn.addEventListener
-("click",()=>{
-    Form.classList.add
-    ("change-form");
+const registerForm=document.getElementById('registerForm');
+
+const registerBtn=document.getElementById('registerBtn');
+
+const loginBtn=document.getElementById('loginBtn');
+
+registerBtn.addEventListener('click',function(){
+
+    console.log('this worry')
+    loginForm.style.translate='-100';
+
+    loginForm.style.display='none';
+
+    registerForm.style.display='flex'
+   
 });
 
-login_btn.addEventListener("click",()=>{
-    form.classList.remove("change-form")
-});
+
+loginBtn.addEventListener('click',function(){
+    loginForm.style.display='flex';
+
+    registerForm.style.display='none'
+})
